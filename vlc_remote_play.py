@@ -10,9 +10,9 @@
 import requests
 def getInfo():
     s = requests.Session()
-    s.auth = ('', '1234')
-    # Auth is username then password - username is blank, set password to match VLC
-    r = s.get('http://192.168.1.17:8080/requests/status.xml?command=pl_pause', verify=False)
+    s.auth = ('', '<password>')
+    # Auth is username then password - username is blank, set <password> to match VLC
+    r = s.get('http://xxx.xxx.x.xx:8080/requests/status.xml?command=pl_pause', verify=False)
     # Edit the IP address (xxx.xxx.x.xx) in the line above to match the target computer
     print "Command Executed"
 
